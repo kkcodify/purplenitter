@@ -50,17 +50,17 @@ macro genPrefs*(prefDsl: untyped) =
 
 genPrefs:
   Privacy:
-    replaceTwitter(input, "nitter.net"):
-      "Replace Twitter links with Nitter (blank to disable)"
-      placeholder: "Nitter hostname"
+    replaceTwitter(input, "twitter.com"):
+      "Replace Twitter links (blank to disable)"
+      placeholder: "Main hostname"
 
-    replaceYouTube(input, "invidious.snopyta.org"):
-      "Replace YouTube links with Invidious (blank to disable)"
-      placeholder: "Invidious hostname"
+    replaceYouTube(input, "youtube.com"):
+      "Replace YouTube links (blank to disable)"
+      placeholder: "1st hostname"
 
     replaceInstagram(input, ""):
-      "Replace Instagram links with Bibliogram (blank to disable)"
-      placeholder: "Bibliogram hostname"
+      "Replace Instagram links (blank to disable)"
+      placeholder: "2nd hostname"
 
   Media:
     mp4Playback(checkbox, true):
