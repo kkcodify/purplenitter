@@ -16,10 +16,10 @@ body {
     --darkest_grey: #212121;
     --border_grey: #7D7D7D;
 
-    --accent: #FF6C60;
-    --accent_light: #FFACA0;
+    --accent: #9969e7;
+    --accent_light: #dec9ff;
     --accent_dark: #909090;
-    --accent_border: #FF6C6091;
+    --accent_border: #9969e791;
 
     --play_button: var(--accent);
     --play_button_hover: var(--accent_light);

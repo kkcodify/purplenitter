@@ -1,7 +1,26 @@
-# Unsupported feature
+## S.V.A.
 
-Nitter doesn't support this feature yet, but it might in the future.
-You can check for an issue and open one if needed here:
-<https://github.com/zedeus/nitter/issues>
+This is an auto generated markdown for an S.V.A. (Svart Mane Asyl) repo.
 
-To find out more about the Nitter project, see the [About page](/about).
+---
+
+
+| Role| Creditor |
+| ------:| -----------:|
+| Dev| Anas Gamrani |
+| Deployment| --dev via Vercel/Heroku/Netlify and/or AWS/GCP/AZ |
+| Maintaining | -- dev |
+
+## Contribution__
+
+ <img src="https://octodex.github.com/images/kimonotocat.png" alt="Kimonotocat" width="200"/>
+
+You can contribute to our projects by simply making a pull request : )
+
+
+## Join Us__
+
+You can reach to us via our [Slack Workspace](https://join.slack.com/t/svartmaneasyl/shared_invite/zt-g2qhdqkg-wjrpG5KTQbEChPtSMdMu6A )
+
+
+> devbranch channel

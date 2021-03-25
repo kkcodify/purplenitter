@@ -1359,32 +1359,32 @@ input::-webkit-datetime-edit-year-field:focus {
     max-height: 365px !important; } }
 
 body {
-  --bg_color: #0F0F0F;
+  --bg_color: #1b1a1f;
   --fg_color: #F8F8F2;
   --fg_faded: #F8F8F2CF;
-  --fg_dark: #FF6C60;
-  --fg_nav: #FF6C60;
+  --fg_dark: #9969e7;
+  --fg_nav: #9969e7;
   --bg_panel: #161616;
   --bg_elements: #121212;
-  --bg_overlays: #1F1F1F;
+  --bg_overlays: #241c29;
   --bg_hover: #1A1A1A;
   --grey: #888889;
   --dark_grey: #404040;
   --darker_grey: #282828;
-  --darkest_grey: #222222;
+  --darkest_grey: #2a2731;
   --border_grey: #3E3E35;
-  --accent: #FF6C60;
-  --accent_light: #FFACA0;
+  --accent: #9969e7;
+  --accent_light: #dec9ff;
   --accent_dark: #8A3731;
-  --accent_border: #FF6C6091;
+  --accent_border: #9969e791;
   --play_button: #D8574D;
-  --play_button_hover: #FF6C60;
+  --play_button_hover: #9969e7;
   --more_replies_dots: #AD433B;
   --error_red: #420A05;
   --verified_blue: #1DA1F2;
   --icon_text: #F8F8F2;
   --tab: #F8F8F2;
-  --tab_selected: #FF6C60;
+  --tab_selected: #9969e7;
   --profile_stat: #F8F8F2;
   background-color: var(--bg_color);
   color: var(--fg_color);
