@@ -1359,7 +1359,7 @@ input::-webkit-datetime-edit-year-field:focus {
     max-height: 365px !important; } }
 
 body {
-  --bg_color: #0F0F0F;
+  --bg_color: #19151b;
   --fg_color: #F8F8F2;
   --fg_faded: #F8F8F2CF;
   --fg_dark: #9969e7;
@@ -1367,11 +1367,11 @@ body {
   --bg_panel: #1f1d23;
   --bg_elements: #121212;
   --bg_overlays: #241c29;
-  --bg_hover: #1A1A1A;
+  --bg_hover: #2f2932;
   --grey: #888889;
   --dark_grey: #404040;
-  --darker_grey: #282828;
-  --darkest_grey: #222222;
+  --darker_grey: #2f2932;
+  --darkest_grey: #2b2230;
   --border_grey: #3E3E35;
   --accent: #9969e7;
   --accent_light: #dec9ff;
