@@ -49,9 +49,9 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
     if theme.len > 0:
       link(rel="stylesheet", type="text/css", href=(&"/css/themes/{theme}.css"))
 
-    link(rel="apple-touch-icon", sizes="180x180", href="/apple-touch-icon.png")
-    link(rel="icon", type="image/png", sizes="32x32", href="/favicon-32x32.png")
-    link(rel="icon", type="image/png", sizes="16x16", href="/favicon-16x16.png")
+    link(rel="apple-touch-icon", sizes="180x180", href="/favicon.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="/favicon.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="/favicon.png")
     link(rel="manifest", href="/site.webmanifest")
     link(rel="mask-icon", href="/safari-pinned-tab.svg", color="#9969e7")
     link(rel="search", type="application/opensearchdescription+xml", title=cfg.title,
