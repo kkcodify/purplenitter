@@ -29,6 +29,7 @@ proc getConfig*(path: string): (Config, parseCfg.Config) =
 
     redisHost: cfg.get("Cache", "redisHost", "localhost"),
     redisPort: cfg.get("Cache", "redisPort", 6379),
+    redisAuth: cfg.get("Cache", "redisAuth", ""),
     redisConns: cfg.get("Cache", "redisConnections", 20),
     redisMaxConns: cfg.get("Cache", "redisMaxConnections", 30)
   )
