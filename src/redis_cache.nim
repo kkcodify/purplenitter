@@ -30,7 +30,7 @@ proc migrate*(key, match: string) {.async.} =
 proc initRedisPool*(cfg: Config) {.async.} =
   try:
     pool = await newRedisPool(cfg.redisConns, maxConns=cfg.redisMaxConns,
-                              host=cfg.redisHost, auth=cfg.redisAuth, port=cfg.redisPort)
+                              host=cfg.redisHost, port=cfg.redisPort)
 
     await migrate("snappyRss", "rss:*")
     await migrate("oldFrosty", "*")
