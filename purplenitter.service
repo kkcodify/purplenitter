@@ -9,8 +9,8 @@ Type=simple
 User=ubuntu
 Group=ubuntu
 
-WorkingDirectory=/opt/nitter/
-ExecStart=/opt/nitter/start.sh
+WorkingDirectory=/opt/purplenitter/
+ExecStart=/opt/purplenitter/start.sh
 
 Restart=always
 RestartSec=15
