@@ -215,7 +215,6 @@ type
     listCacheTime*: int
 
     redisHost*: string
-    redisAuth*: string    
     redisPort*: int
     redisConns*: int
     redisMaxConns*: int
