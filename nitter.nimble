@@ -20,8 +20,8 @@ requires "markdown#abdbe5e"
 requires "packedjson#7198cc8"
 requires "supersnappy#1.1.5"
 requires "redpool#57aeb25"
-requires "https://github.com/Varulv1997/client_redis#a8fd89d"
-requires "https://github.com/Varulv1997/frosty#477351a"
+requires "https://github.com/zedeus/redis#94bcbf1"
+requires "https://github.com/disruptek/frosty#0.3.1"
 
 
 # Tasks
