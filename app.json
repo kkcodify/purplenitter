@@ -1,0 +1,7 @@
+{
+  "name": "Nitteroku",
+  "description": "Deploy the Twitter frontend Nitter on Heroku",
+  "repository": "https://github.com/Varulv1997/purplenitter",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["nim", "twitter", "nitter", "redis"]
+}
