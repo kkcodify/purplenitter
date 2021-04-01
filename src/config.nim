@@ -14,7 +14,7 @@ proc getConfig*(path: string): (Config, parseCfg.Config) =
 
   let conf = Config(
     address: cfg.get("Server", "address", "0.0.0.0"),
-    port: cfg.get("Server", "port", ),
+    port: cfg.get("Server", "port", 80),
     useHttps: cfg.get("Server", "https", true),
     title: cfg.get("Server", "title", "A newborn Nitter"),
     hostname: cfg.get("Server", "hostname", "localhost"),
