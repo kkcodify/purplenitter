@@ -14,10 +14,10 @@ proc getConfig*(path: string): (Config, parseCfg.Config) =
 
   let conf = Config(
     address: cfg.get("Server", "address", "0.0.0.0"),
-    port: cfg.get("Server", "port", 8080),
+    port: cfg.get("Server", "port", 9191),
     useHttps: cfg.get("Server", "https", true),
-    title: cfg.get("Server", "title", "Nitter"),
-    hostname: cfg.get("Server", "hostname", "nitter.net"),
+    title: cfg.get("Server", "title", "A newborn Nitter"),
+    hostname: cfg.get("Server", "hostname", "localhost"),
     staticDir: cfg.get("Server", "staticDir", "./public"),
 
     hmacKey: cfg.get("Config", "hmacKey", "secretkey"),
@@ -28,7 +28,7 @@ proc getConfig*(path: string): (Config, parseCfg.Config) =
     rssCacheTime: cfg.get("Cache", "rssMinutes", 10),
 
     redisHost: cfg.get("Cache", "redisHost", "localhost"),
-    redisPort: cfg.get("Cache", "redisPort", 6379),
+    redisPort: cfg.get("Cache", "redisPort", 10836),
     redisConns: cfg.get("Cache", "redisConnections", 20),
     redisMaxConns: cfg.get("Cache", "redisMaxConnections", 30)
   )
