@@ -201,7 +201,7 @@ type
 
   Config* = ref object
     address*: string
-    port*: string
+    port*: int
     useHttps*: bool
     title*: string
     hostname*: string
