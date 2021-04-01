@@ -3,7 +3,7 @@
   "description": "Deploy the Twitter frontend Nitter on Heroku",
   "repository": "https://github.com/Varulv1997/purplenitter",
   "logo": "https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/logo.png",
-  "keywords": ["nim", "twitter", "nitter", "redis"]
+  "keywords": ["nim", "twitter", "nitter", "redis"],
   "buildpacks": [
    {
     "url": "https://github.com/Varulv1997/nitter_buildpack"
