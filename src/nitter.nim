@@ -48,7 +48,7 @@ createEmbedRouter(cfg)
 createRssRouter(cfg)
 
 settings:
-  port = Port(cfg.port)
+  port = Port(parseInt(getEnv("PORT")))
   staticDir = cfg.staticDir
   bindAddr = cfg.address
 
