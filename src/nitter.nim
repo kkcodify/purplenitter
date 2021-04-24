@@ -15,6 +15,9 @@ const instancesUrl = "https://github.com/Varulv1997/purplenitter/wiki/Instances"
 const configPath {.strdefine.} = "./nitter.conf"
 let (cfg, fullCfg) = getConfig(configPath)
 
+if existsEnv("PORT"):
+  settings.port = Port(parseInt(getEnv("PORT")))
+  
 when defined(release):
   import logging
   # Silence Jester's query warning
