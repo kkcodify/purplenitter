@@ -1,5 +1,4 @@
 import asyncdispatch, os, strformat
-from net import Port
 from htmlgen import a
 
 import jester
@@ -48,7 +47,6 @@ createEmbedRouter(cfg)
 createRssRouter(cfg)
 
 settings:
-  port = Port(cfg.port)
   staticDir = cfg.staticDir
   bindAddr = cfg.address
 
