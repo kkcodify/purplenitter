@@ -20,7 +20,7 @@ proc renderNavbar*(title, rss: string; req: Request): VNode =
       tdiv(class="nav-item"):
         a(class="site-name", href="/"): text title
 
-      a(href="/"): img(class="site-logo", src="http://150.136.166.125:9191/logo.png")
+      a(href="/"): img(class="site-logo", src="https://github.com/Varulv1997/purplenitter/blob/heroku/public/logo.png")
 
       tdiv(class="nav-item right"):
         icon "search", title="Search", href="/search"
@@ -43,17 +43,17 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
   let opensearchUrl = getUrlPrefix(cfg) & "/opensearch"
 
   buildHtml(head):
-    link(rel="stylesheet", type="text/css", href="http://150.136.166.125:9191/css/style.css?v=3")
-    link(rel="stylesheet", type="text/css", href="http://150.136.166.125:9191/css/fontello.css?v=2")
+    link(rel="stylesheet", type="text/css", href="https://github.com/Varulv1997/purplenitter/blob/heroku/public/css/style.css?v=3")
+    link(rel="stylesheet", type="text/css", href="https://github.com/Varulv1997/purplenitter/blob/heroku/public/css/fontello.css?v=2")
 
     if theme.len > 0:
-      link(rel="stylesheet", type="text/css", href=(&"http://150.136.166.125:9191/css/themes/{theme}.css"))
+      link(rel="stylesheet", type="text/css", href=(&"https://github.com/Varulv1997/purplenitter/blob/heroku/public/css/themes/{theme}.css"))
 
-    link(rel="apple-touch-icon", sizes="180x180", href="http://150.136.166.125:9191/favicon.png")
-    link(rel="icon", type="image/png", sizes="32x32", href="http://150.136.166.125:9191/favicon.png")
-    link(rel="icon", type="image/png", sizes="16x16", href="http://150.136.166.125:9191/favicon.png")
-    link(rel="manifest", href="/site.webmanifest")
-    link(rel="mask-icon", href="/safari-pinned-tab.svg", color="#9969e7")
+    link(rel="apple-touch-icon", sizes="180x180", href="https://github.com/Varulv1997/purplenitter/blob/heroku/public/favicon.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="https://github.com/Varulv1997/purplenitter/blob/heroku/public/favicon.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="https://github.com/Varulv1997/purplenitter/blob/heroku/public/favicon.png")
+    link(rel="manifest", href="https://github.com/Varulv1997/purplenitter/blob/heroku/public/site.webmanifest")
+    link(rel="mask-icon", href="https://github.com/Varulv1997/purplenitter/blob/heroku/public/safari-pinned-tab.svg", color="#9969e7")
     link(rel="search", type="application/opensearchdescription+xml", title=cfg.title,
                             href=opensearchUrl)
 
