@@ -10,6 +10,11 @@ import routes/[
   preferences, timeline, status, media, search, rss, list,
   unsupported, embed, resolver, router_utils]
 
+var settings = newSettings()
+
+if existsEnv("PORT"):
+  settings.port = Port(parseInt(getEnv("PORT")))
+
 const instancesUrl = "https://github.com/Varulv1997/purplenitter/wiki/Instances"
 
 const configPath {.strdefine.} = "./nitter.conf"
