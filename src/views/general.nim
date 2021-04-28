@@ -20,7 +20,7 @@ proc renderNavbar*(title, rss: string; req: Request): VNode =
       tdiv(class="nav-item"):
         a(class="site-name", href="/"): text title
 
-      a(href="/"): img(class="site-logo", src="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/logo.png")
+      a(href="/"): img(class="site-logo", src="https://res.cloudinary.com/svart-mane-asyl/image/upload/v1619625411/purplenitter/logo_ujcub9.png")
 
       tdiv(class="nav-item right"):
         icon "search", title="Search", href="/search"
@@ -43,16 +43,15 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
   let opensearchUrl = getUrlPrefix(cfg) & "/opensearch"
 
   buildHtml(head):
-    link(rel="stylesheet", type="text/css", href="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/css/style.css")
-    link(rel="stylesheet", type="text/css", href="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/css/fontello.css")
+    link(rel="stylesheet", type="text/css", href="https://res.cloudinary.com/svart-mane-asyl/raw/upload/v1619625414/purplenitter/style_qz2bbx.css")
+    link(rel="stylesheet", type="text/css", href="https://res.cloudinary.com/svart-mane-asyl/raw/upload/v1619625407/purplenitter/fontello_usxbgf.css")
 
     if theme.len > 0:
-      link(rel="stylesheet", type="text/css", href=(&"https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/css/themes/{theme}.css"))
+      link(rel="stylesheet", type="text/css", href=(&"https://res.cloudinary.com/svart-mane-asyl/raw/upload/v1619625408/purplenitter/nitter_fnouse.css"))
 
-    link(rel="apple-touch-icon", sizes="180x180", href="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/favicon.png")
-    link(rel="icon", type="image/png", sizes="32x32", href="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/favicon.png")
-    link(rel="icon", type="image/png", sizes="16x16", href="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/favicon.png")
-    link(rel="manifest", href="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/site.webmanifest")
+    link(rel="apple-touch-icon", sizes="180x180", href="https://res.cloudinary.com/svart-mane-asyl/image/upload/v1619625406/purplenitter/favicon_cmynhk.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="https://res.cloudinary.com/svart-mane-asyl/image/upload/v1619625406/purplenitter/favicon_cmynhk.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="https://res.cloudinary.com/svart-mane-asyl/image/upload/v1619625406/purplenitter/favicon_cmynhk.png")
     link(rel="search", type="application/opensearchdescription+xml", title=cfg.title,
                             href=opensearchUrl)
 
@@ -60,11 +59,11 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
       link(rel="alternate", type="application/rss+xml", href=rss, title="RSS feed")
 
     if prefs.hlsPlayback:
-      script(src="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/js/hls.light.min.js", `defer`="")
-      script(src="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/js/hlsPlayback.js", `defer`="")
+      script(src="https://res.cloudinary.com/svart-mane-asyl/raw/upload/v1619625419/purplenitter/hls.light.min_jjqmdm.js", `defer`="")
+      script(src="https://res.cloudinary.com/svart-mane-asyl/raw/upload/v1619625407/purplenitter/hlsPlayback_qyx6vt.js", `defer`="")
 
     if prefs.infiniteScroll:
-      script(src="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/js/infiniteScroll.js", `defer`="")
+      script(src="https://res.cloudinary.com/svart-mane-asyl/raw/upload/v1619625408/purplenitter/infiniteScroll_ccn1vy.js", `defer`="")
 
     title:
       if titleText.len > 0:
@@ -105,7 +104,7 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
     # this is last so images are also preloaded
     # if this is done earlier, Chrome only preloads one image for some reason
     link(rel="preload", type="font/woff2", `as`="font",
-         href="https://github.com/Varulv1997/purplenitter/raw/master/public/fonts/fontello.woff2", crossorigin="anonymous")
+         href="https://res.cloudinary.com/svart-mane-asyl/raw/upload/v1619625699/purplenitter/fontello_xfqy6c.woff2", crossorigin="anonymous")
 
 proc renderMain*(body: VNode; req: Request; cfg: Config; prefs=defaultPrefs;
                  titleText=""; desc=""; ogTitle=""; rss=""; video="";
