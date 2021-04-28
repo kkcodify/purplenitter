@@ -20,7 +20,7 @@ proc renderNavbar*(title, rss: string; req: Request): VNode =
       tdiv(class="nav-item"):
         a(class="site-name", href="/"): text title
 
-      a(href="/"): img(class="site-logo", src="/logo.png")
+      a(href="/"): img(class="site-logo", src="https://storage.googleapis.com/default1901/logo.png")
 
       tdiv(class="nav-item right"):
         icon "search", title="Search", href="/search"
@@ -43,15 +43,15 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
   let opensearchUrl = getUrlPrefix(cfg) & "/opensearch"
 
   buildHtml(head):
-    link(rel="stylesheet", type="text/css", href="/css/style.css?v=3")
-    link(rel="stylesheet", type="text/css", href="/css/fontello.css?v=2")
+    link(rel="stylesheet", type="text/css", href="https://storage.googleapis.com/default1901/style.css")
+    link(rel="stylesheet", type="text/css", href="https://storage.googleapis.com/default1901/fontello.css")
 
     if theme.len > 0:
       link(rel="stylesheet", type="text/css", href=(&"/css/themes/{theme}.css"))
 
-    link(rel="apple-touch-icon", sizes="180x180", href="/favicon.png")
-    link(rel="icon", type="image/png", sizes="32x32", href="/favicon.png")
-    link(rel="icon", type="image/png", sizes="16x16", href="/favicon.png")
+    link(rel="apple-touch-icon", sizes="180x180", href="https://storage.googleapis.com/default1901/favicon.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="https://storage.googleapis.com/default1901/favicon.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="https://storage.googleapis.com/default1901/favicon.png")
     link(rel="manifest", href="/site.webmanifest")
     link(rel="mask-icon", href="/safari-pinned-tab.svg", color="#9969e7")
     link(rel="search", type="application/opensearchdescription+xml", title=cfg.title,
@@ -61,11 +61,11 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
       link(rel="alternate", type="application/rss+xml", href=rss, title="RSS feed")
 
     if prefs.hlsPlayback:
-      script(src="/js/hls.light.min.js", `defer`="")
-      script(src="/js/hlsPlayback.js", `defer`="")
+      script(src="https://storage.googleapis.com/default1901/hls.light.min.js", `defer`="")
+      script(src="https://storage.googleapis.com/default1901/hlsPlayback.js", `defer`="")
 
     if prefs.infiniteScroll:
-      script(src="/js/infiniteScroll.js", `defer`="")
+      script(src="https://storage.googleapis.com/default1901/infiniteScroll.js", `defer`="")
 
     title:
       if titleText.len > 0:
