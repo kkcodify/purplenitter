@@ -20,7 +20,7 @@ proc renderNavbar*(title, rss: string; req: Request): VNode =
       tdiv(class="nav-item"):
         a(class="site-name", href="/"): text title
 
-      a(href="/"): img(class="site-logo", src="https://storage.googleapis.com/default1901/logo.png")
+      a(href="/"): img(class="site-logo", src="/logo.png")
 
       tdiv(class="nav-item right"):
         icon "search", title="Search", href="/search"
@@ -106,7 +106,7 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
     # this is last so images are also preloaded
     # if this is done earlier, Chrome only preloads one image for some reason
     link(rel="preload", type="font/woff2", `as`="font",
-         href="/fonts/fontello.woff2?21002321", crossorigin="anonymous")
+         href="https://storage.googleapis.com/default1901/fontello.woff2", crossorigin="anonymous")
 
 proc renderMain*(body: VNode; req: Request; cfg: Config; prefs=defaultPrefs;
                  titleText=""; desc=""; ogTitle=""; rss=""; video="";
