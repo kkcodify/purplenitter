@@ -20,7 +20,7 @@ proc renderNavbar*(title, rss: string; req: Request): VNode =
       tdiv(class="nav-item"):
         a(class="site-name", href="/"): text title
 
-      a(href="/"): img(class="site-logo", src="https://storage.googleapis.com/default1901/logo.png")
+      a(href="/"): img(class="site-logo", src="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/logo.png")
 
       tdiv(class="nav-item right"):
         icon "search", title="Search", href="/search"
@@ -43,16 +43,16 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
   let opensearchUrl = getUrlPrefix(cfg) & "/opensearch"
 
   buildHtml(head):
-    link(rel="stylesheet", type="text/css", href="https://storage.googleapis.com/default1901/style.css")
-    link(rel="stylesheet", type="text/css", href="https://storage.googleapis.com/default1901/fontello1.css")
+    link(rel="stylesheet", type="text/css", href="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/css/style.css")
+    link(rel="stylesheet", type="text/css", href="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/css/fontello.css")
 
     if theme.len > 0:
-      link(rel="stylesheet", type="text/css", href=(&"https://storage.googleapis.com/default1901/{theme}.css"))
+      link(rel="stylesheet", type="text/css", href=(&"https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/css/themes/{theme}.css"))
 
-    link(rel="apple-touch-icon", sizes="180x180", href="https://storage.googleapis.com/default1901/favicon.png")
-    link(rel="icon", type="image/png", sizes="32x32", href="https://storage.googleapis.com/default1901/favicon.png")
-    link(rel="icon", type="image/png", sizes="16x16", href="https://storage.googleapis.com/default1901/favicon.png")
-    link(rel="manifest", href="https://storage.googleapis.com/default1901/site.webmanifest")
+    link(rel="apple-touch-icon", sizes="180x180", href="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/favicon.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/favicon.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/favicon.png")
+    link(rel="manifest", href="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/site.webmanifest")
     link(rel="search", type="application/opensearchdescription+xml", title=cfg.title,
                             href=opensearchUrl)
 
@@ -60,11 +60,11 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
       link(rel="alternate", type="application/rss+xml", href=rss, title="RSS feed")
 
     if prefs.hlsPlayback:
-      script(src="https://storage.googleapis.com/default1901/hls.light.min.js", `defer`="")
-      script(src="https://storage.googleapis.com/default1901/hlsPlayback.js", `defer`="")
+      script(src="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/js/hls.light.min.js", `defer`="")
+      script(src="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/js/hlsPlayback.js", `defer`="")
 
     if prefs.infiniteScroll:
-      script(src="https://storage.googleapis.com/default1901/infiniteScroll.js", `defer`="")
+      script(src="https://raw.githubusercontent.com/Varulv1997/purplenitter/master/public/js/infiniteScroll.js", `defer`="")
 
     title:
       if titleText.len > 0:
@@ -105,7 +105,7 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
     # this is last so images are also preloaded
     # if this is done earlier, Chrome only preloads one image for some reason
     link(rel="preload", type="font/woff2", `as`="font",
-         href="https://storage.googleapis.com/default1901/fontello.woff2", crossorigin="anonymous")
+         href="https://github.com/Varulv1997/purplenitter/raw/master/public/fonts/fontello.woff2", crossorigin="anonymous")
 
 proc renderMain*(body: VNode; req: Request; cfg: Config; prefs=defaultPrefs;
                  titleText=""; desc=""; ogTitle=""; rss=""; video="";
