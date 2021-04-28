@@ -20,7 +20,7 @@ proc renderNavbar*(title, rss: string; req: Request): VNode =
       tdiv(class="nav-item"):
         a(class="site-name", href="/"): text title
 
-      a(href="/"): img(class="site-logo", src="logo.png")
+      a(href="/"): img(class="site-logo", src="https://storage.googleapis.com/default1901/logo.png")
 
       tdiv(class="nav-item right"):
         icon "search", title="Search", href="/search"
