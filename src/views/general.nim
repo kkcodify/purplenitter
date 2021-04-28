@@ -44,7 +44,7 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
 
   buildHtml(head):
     link(rel="stylesheet", type="text/css", href="https://storage.googleapis.com/default1901/style.css")
-    link(rel="stylesheet", type="text/css", href="https://storage.googleapis.com/default1901/fontello.css")
+    link(rel="stylesheet", type="text/css", href="https://storage.googleapis.com/default1901/fontello1.css")
 
     if theme.len > 0:
       link(rel="stylesheet", type="text/css", href=(&"https://storage.googleapis.com/default1901/{theme}.css"))
