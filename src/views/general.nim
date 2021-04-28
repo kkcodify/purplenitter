@@ -47,13 +47,12 @@ proc renderHead*(prefs: Prefs; cfg: Config; titleText=""; desc=""; video="";
     link(rel="stylesheet", type="text/css", href="https://storage.googleapis.com/default1901/fontello.css")
 
     if theme.len > 0:
-      link(rel="stylesheet", type="text/css", href=(&"/css/themes/{theme}.css"))
+      link(rel="stylesheet", type="text/css", href=(&"https://storage.googleapis.com/default1901/{theme}.css"))
 
     link(rel="apple-touch-icon", sizes="180x180", href="https://storage.googleapis.com/default1901/favicon.png")
     link(rel="icon", type="image/png", sizes="32x32", href="https://storage.googleapis.com/default1901/favicon.png")
     link(rel="icon", type="image/png", sizes="16x16", href="https://storage.googleapis.com/default1901/favicon.png")
-    link(rel="manifest", href="/site.webmanifest")
-    link(rel="mask-icon", href="/safari-pinned-tab.svg", color="#9969e7")
+    link(rel="manifest", href="https://storage.googleapis.com/default1901/site.webmanifest")
     link(rel="search", type="application/opensearchdescription+xml", title=cfg.title,
                             href=opensearchUrl)
 
