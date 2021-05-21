@@ -2,6 +2,9 @@ You can deploy Nitter on Zeet.co (example: https://varulv1997-purplenitter.zeet.
 
 [![Deploy](https://deploy.zeet.co/purplenitter.svg)](https://deploy.zeet.co/?url=https://github.com/Varulv1997/purplenitter)
 
+Or you can use Google Cloud's App Engine (using Cloud Run):
+
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/Varulv1997/purplenitter.git)
 
 For Heroku check the buildpack https://github.com/Varulv1997/nitter_buildpack
 
