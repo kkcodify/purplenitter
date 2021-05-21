@@ -1,4 +1,4 @@
-You can deploy Nitter on Zeet.co
+You can deploy Nitter on Zeet.co (example: https://varulv1997-purplenitter.zeet.app/)
 
 [![Deploy](https://deploy.zeet.co/purplenitter.svg)](https://deploy.zeet.co/?url=https://github.com/Varulv1997/purplenitter)
 
