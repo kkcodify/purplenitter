@@ -1375,12 +1375,12 @@ body {
   --border_grey: #462d41;
   --accent: #9969e7;
   --accent_light: #dec9ff;
-  --accent_dark: #8A3731;
+  --accent_dark: #a8002a;
   --accent_border: #9969e7;
-  --play_button: #D8574D;
+  --play_button: #a8002a;
   --play_button_hover: #9969e7;
-  --more_replies_dots: #AD433B;
-  --error_red: #420A05;
+  --more_replies_dots: #a8002a;
+  --error_red: #a8002a;
   --verified_blue: #6d5686;
   --icon_text: #F8F8F2;
   --tab: #F8F8F2;
